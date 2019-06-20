@@ -1,0 +1,36 @@
+# def:continious input 
+while True:    
+    def radius(x):
+        y=3.14*x*x
+        z=2*3.14*x
+        print("The radius of te circle",x)
+        print("Area of the circle",y)
+        print("Perimeter of the circle",z)
+    x=float(input("Give the Radius of the circle"))
+    radius(x)
+    print("Do u wnt to exit???")
+    p=input("yes or no")
+    if p=='yes' or p=='Yes':
+        break
+    elif p=='no' or p=='No':
+        continue
+    else:
+        print("wrong input")
+#########################################################################
+#def: by factorial
+x=int(input("Give your number"))
+def factorial(x):
+    if x==0:
+        return 1 
+    return x*factorial(x-1)
+print(factorial(x))
+#########################################################################
+#Program to find sum of the numbers in between a range of valuesn 
+def sum(x,y):
+    s=0
+    for i in range(x,y+1):
+        s+=i
+    print("Sum of integers from",x,"to",y,"is",s)
+sum(1,25)
+sum(50,75)
+sum(90,100)

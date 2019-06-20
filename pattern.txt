@@ -1,0 +1,105 @@
+for i in range(3,10,2):
+    for j in range(1,i,2):
+        print(j,end='')
+    print()
+1
+13
+135
+1357
++++++++++++++++++++++++++++++++++++
+n=1
+for a in range(5):
+    print(n)
+    n=n*10+1
+
+1
+11
+111
+1111
+11111
+++++++++++++++++++++++++
+for i in range(1,5):
+    print(i*"1")
+1
+11
+111
+1111
++++++++++++++++++
+for i in range(5):
+    for j in range(5):
+        if i+j==2 or i-j==2 or j-i==2 or i==j==3 or i==j==2:
+            print("*",end="")
+        else:
+            print(end=" ")
+    print()
+  *  
+ * * 
+* * *
+ * * 
+  *  
++++++++++++++++++++++++++
+for i in range(7):
+    for j in range(7):
+        if i==j or i+j==6:
+            print("*",end="")
+        else:
+            print(end=" ")
+    print()
+*     *
+ *   * 
+  * *  
+   *   
+  * *  
+ *   * 
+*     *
+
++++++++++++++++++++++++++++++++++++++
+a=ord('a') 
+for i in range(26):
+    for n in range(a,a+i+1):
+        print(chr(n),end=" ")
+    print()
+a 
+a b 
+a b c 
+a b c d 
+a b c d e 
+a b c d e f 
+a b c d e f g 
+a b c d e f g h 
+a b c d e f g h i 
+a b c d e f g h i j 
+a b c d e f g h i j k 
+a b c d e f g h i j k l 
+a b c d e f g h i j k l m 
+a b c d e f g h i j k l m n 
+a b c d e f g h i j k l m n o 
+a b c d e f g h i j k l m n o p 
+a b c d e f g h i j k l m n o p q 
+a b c d e f g h i j k l m n o p q r 
+a b c d e f g h i j k l m n o p q r s 
+a b c d e f g h i j k l m n o p q r s t 
+a b c d e f g h i j k l m n o p q r s t u 
+a b c d e f g h i j k l m n o p q r s t u v 
+a b c d e f g h i j k l m n o p q r s t u v w 
+a b c d e f g h i j k l m n o p q r s t u v w x 
+a b c d e f g h i j k l m n o p q r s t u v w x y 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+++++++++++++++++++++++++++++++++++++++++++++++
+for i in range(3):
+    print(i*"*")
+for i in range(3,0,-1):
+    print(i*"*")
+*
+**
+***
+**
+*
+++++++++++++++++++++++++++++++++++++++++++++++
+for i in range(5):
+    for j in range(5):
+        if i+j==2 or i-j==2 or j-i==2 or i==j==3 or i==j==2:
+            print("*",end="")
+        else:
+            print(end=" ")
+    print()

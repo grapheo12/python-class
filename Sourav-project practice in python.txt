@@ -1,0 +1,270 @@
+n=int(input("Enter a number to check it prime or not :"))
+i=1
+count=0
+if n==1:
+    print(n,"is neither prime nor non-prime number.")
+elif n>1:
+    while i<=n:
+        if n%i==0:
+            count=count+1
+        i=i+1
+    if count==2:
+        print(n,"is a prime number.")
+    else:
+        print(n,"is not a prime number.")
+else:
+    print("Please enter a natural number.")
+****************************************************
+a=int(input("Enter a number (+ve):"))
+b=int(input("Enter a number(+ve) :"))
+c=int(input("Enter a number(+ve) :"))
+if a>0 and b>0 and c>0 :
+    if (a+b)>c and (b+c)>a and (c+a)>b :
+        if a==b and a==c :
+            print("It is an E                                    QUILATERAL triangle.")
+        elif a==b or b==c or c==a :
+            print("It is an ISOSCELES triangle.")
+        else  :
+            print("It is a SCALENE triangle.")
+        s=(a+b+c)/2 
+        p=s*(s-a)*(s-b)*(s-c)
+        import math
+        q=math.sqrt(p)
+        print("The area of the triangle is ",q,"sq.units.")
+    else :
+        print("Triangle is not possible.")
+else:
+    print("The sides of a triangle must not be zero or negative. ")
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+a=int(input("Enter a number (+ve):"))
+b=int(input("Enter a number(+ve) :"))
+c=int(input("Enter a number(+ve) :"))
+if a>b :
+    if b==c :
+        print(a,">",b)
+    elif b>c :
+        print(a,">",b,">",c)
+    elif b<c:
+        if c==a :
+            print(a,">",b)
+        elif c<a :
+            print(a,">",c,">",b)
+        elif c>a :
+            print(c,">",a,">",b)
+elif a==b :
+    if b==c :
+        print("You have entered three same numbers.")
+    elif b>c :
+        print(b,">",c)
+    elif b<c :
+        print(c,">",b)
+elif b>a :
+    if a==c:
+        print(b,">",a)
+    elif a>c :
+        print(b,">",a,">",c)
+    elif a<c :
+        if c==b :
+            print(b,">",a)
+        if c<b :
+            print(b,">",c,">",a)
+        elif c>b :
+            print(c,">",b,">",a)            
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#
+x=int(input("Enter a number :"))
+if x>1 :
+    import math
+    t=int(math.sqrt(x))
+    d=2
+    if d>t :
+        print(x,"is a prime.")
+    while d<=t :
+        q=x//d
+        r=x-(q*d)
+        if r==0 :
+            print(x,"is a non prime.")
+            break
+        elif d>t :
+            print(x,"is a prime.")
+elif x==1 :
+    print(x,"is neither prime nor non-prime. ")
+else :
+    print("Please re-enter.")    
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+x=int(input('Enter 1st number(x) :'))
+y=int(input('Enter 2nd number(y) :'))
+x=x+y
+y=x-y
+x=x-y
+print('After swapping (x) =',x)
+print('After swapping (y) =',y)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+x=int(input("Enter a particular year :"))
+if x%4==0  and x%100!=0 :
+    print(x,"is a leap year.")
+elif x%400==0 :
+    print(x,"is a leap year.")
+else :
+    print(x,"is not a leap year.")
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+print("Ax^2+Bx+c=0")
+A=int(input("Enter the coefficient of x^2(A) :"))
+B=int(input("Enter the coefficient of x(B) :"))
+c=int(input("Enter the constant term(C) :"))
+x=-C/B
+D=B*B-4*A*C
+import math
+m=math.sqrt(D)
+x1=(-B+D)/(2*A)
+x2=(-B-D)/(2*A)
+if A==0 :
+    if B==0:
+        print("The equation is degenerate.")
+    elif B!=0:
+        print("The linear euation has single root.And the root is =",x)
+if D>0 :
+    print("There exist two real and distinct roots. And the roots are =",x1,",",x2)
+elif D==0:
+    print("The two roots are real and equal.And the roots are =",x1)
+else :
+    print("The two roots are imaginary.")
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+print("Ax^2+Bx+c=0")
+A=int(input("Enter the coefficient of x^2(A) :"))
+B=int(input("Enter the coefficient of x(B) :"))
+C=int(input("Enter the constant term(C) :"))
+x=-C/B
+D=B*B-4*A*C
+if D<0:
+    print("The two roots are imaginary.")
+break
+import math
+m=math.sqrt(D)
+x1=(-B+m)/(2*A)
+x2=(-B-m)/(2*A)
+if A==0 :
+    if B==0:
+        print("The equation is degenerate.")
+    elif B!=0:
+        print("The linear euation has single root.And the root is =",x)
+if D>0 :
+    print("There exist two real and distinct roots. And the roots are =",x1,",",x2)
+elif D==0:
+    print("The two roots are real and equal.And the roots are =",x1)
+#else :
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+******
+print("ax^2+bx+c=0")
+a=int(input("Enter a number :"))
+b=int(input("Enter a number :"))
+c=int(input("Enter a number :"))
+if a==0:
+    if b==0 :
+        print("Equation is degenerate .")
+    elif b!=0 :
+        x=-c/b
+        print("Linear equation has single root.And the root is ",x)
+if a!=0 :
+    d=b*b-4*a*c
+    if d>0:
+        import math
+        m=math.sqrt(d)
+        x1=(-b+m)/(2*a)
+        x2=(-b-m)/(2*a)
+        print("There exist two real and distinct roots.")
+        print("The roots are ",x1,"and",x2)
+    if d==0 :
+        x3=-b/(2*a)
+        print("There exist two real and equal roots.The roots are ",x3,"and",x3)
+    if d<0 :
+        import math
+        k=math.fabs(d)
+        m2=math.sqrt(k)
+        x4=-b/(2*a)
+        y4=m2/(2*a)
+        print("All roots are imaginary.The roots are ",x4,"+ j",y4," and ",x4,"- j",y4)
+        
+    
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+print("ax^2+bx+c=0")
+a=int(input("Enter a number :"))
+b=int(input("Enter a number :"))
+c=int(input("Enter a number :"))
+if a==0:
+    if b==0 :
+        print("Equation is degenerate .")
+    elif b!=0 :
+        x=-c/b
+        print("Linear equation has single root.And the root is ",x)
+if a!=0 :
+    d=b*b-4*a*c
+    if d>0:
+        import math
+        m=math.sqrt(d)
+        x1=(-b+m)/(2*a)
+        x2=(-b-m)/(2*a)
+        print("There exist two real and distinct roots.")
+        print("The roots are ",x1,"and",x2)
+    if d==0 :
+        x3=-b/(2*a)
+        print("There exist two real and equal roots.The roots are ",x3,"and",x3)
+    if d<0 :
+        import math
+        k=math.fabs(d)
+        m2=math.sqrt(k)
+        x4=-b/(2*a)
+        y4=m2/(2*a)
+        print("All roots are imaginary.The roots are ",x4,"+ j",y4," and ",x4,"- j",y4)
+        
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+num=int(input("Enter a number."))
+fact=1
+i=1
+while i<=num:
+    fact=fact*i
+    i=i+1
+print("The factorial of",num,"is ",num,"!=",fact) 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+x=int(input("Enter a number upto which summation is required : "))
+sum=0
+for i in range (1,x+1):
+    sum=sum+i
+print("The summation of first ",x,"numbers is=",sum)    
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+n=10       #The number of student in the class.
+i=1
+pass_count=0
+fail_count=0
+if i<=n:
+    for m in [79,32,50,65,20,9,100,50,90,40]: #The marks that the students are obtaind 
+        if m>=50:
+            pass_count=pass_count+1
+        else:
+            fail_count=fail_count+1
+    i=i+1
+    print("Between",n,"students",pass_count,"students are pass")
+    print("and",fail_count,"students are fail.")
+else:("Please check the programme.")    
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+def revof(x):
+    rev=0
+    while x>0:
+        r=(x%10)
+        x=x//10
+        rev=rev*10+r
+    print("The reverse number is =",rev)
+m=int(input("Enter a number which reverse is required :"))
+revof(m)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+d=int(input("Enter a decimal number to covert it to binary :"))
+while d>0:
+    rem=d%2
+    d=d/2
+    p=rem
+    for elem in reversed(p)
+    print(elem)  
+      ****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        

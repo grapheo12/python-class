@@ -1,0 +1,448 @@
+r=float(input("Enter the radius of the circle: "))
+pi=3.14
+area=pi*r*r
+peri=2*pi*r
+print("Area of the circle= ", area)
+print("Perimeter of the circle= ", peri)
++++++++++++++++++++++++++++++++++++++++++
+sum=0
+for n in range(1,11):
+    sum=sum+n
+print('Sum of natural numbers <=',n,'is',sum)
+
+*************************************************************************
+x=int(input('Enter the 1st number of range :'))
+y=int(input('Enter the 2nd number of range :'))
+sum=0
+for n in range(x,y+1):
+    sum=sum+n
+print('Sum of natural numbers <=',n,'is',sum) 
+************************************************************************
+x=int(input('Enter the 1st number of range :'))
+y=int(input('Enter the 2nd number of range :'))
+oddsum=evensum=0
+for n in range(x,y+1):
+    if n%2==0 :
+        evensum=evensum+n
+    else :
+        oddsum=oddsum+n        
+print('Sum of odd numbers =',oddsum) 
+print('Sum of even numbers =',evensum)
+*************************************************************************
+x=int(input('Enter the 1st number of range :'))
+y=int(input('Enter the 2nd number of range :'))
+print('The even numbers are: ')
+for n in range(x,y+1) :   
+    if n%2==0 :        
+        print(n)
+print('The odd numbers are: ')
+for n in range(x,y+1) :   
+    if n%2!=0 :        
+        print(n)  
+   # if n%2 :
+    #    print('The odd numbers are =',n)
+**************************************************************************
+for i in range(1,6):
+    for k in range(1,i):
+        print(k,end=' ')
+    print()
+OUTPUT:-
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+........................................................................................................
+a=ord('a')
+z=ord("z")
+for i in range(a,z+2):
+    for k in range(a,i):
+        print(chr(k),end=' ')
+    print()
+OUTPUT:-
+a 
+a b 
+a b c 
+a b c d 
+a b c d e 
+a b c d e f 
+a b c d e f g 
+a b c d e f g h 
+a b c d e f g h i 
+a b c d e f g h i j 
+a b c d e f g h i j k 
+a b c d e f g h i j k l 
+a b c d e f g h i j k l m 
+a b c d e f g h i j k l m n 
+a b c d e f g h i j k l m n o 
+a b c d e f g h i j k l m n o p 
+a b c d e f g h i j k l m n o p q 
+a b c d e f g h i j k l m n o p q r 
+a b c d e f g h i j k l m n o p q r s 
+a b c d e f g h i j k l m n o p q r s t 
+a b c d e f g h i j k l m n o p q r s t u 
+a b c d e f g h i j k l m n o p q r s t u v 
+a b c d e f g h i j k l m n o p q r s t u v w 
+a b c d e f g h i j k l m n o p q r s t u v w x 
+a b c d e f g h i j k l m n o p q r s t u v w x y 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+...........................................................................................
+x=int(input("The first number is :"))
+y=int(input("The secnd number is: "))
+z=len(str(x))
+w=10**z
+for i in range(w,0,-1):
+      if x%i==0 and y%i==0:
+          print("The HCF is ",i)
+          break
+OUTPUT:-
+The first number is :48
+The secnd number is: 56
+The HCF is  8
+******************************************************************************
+#PROGRAMME TO SHOW MULTIPLICATION TABLE :
+y=int(input('Enter the number which multiplication table you want :'))
+print('The multiplication table of ',y,'is') 
+for n in range(1,11):
+    x=y*n
+    print(y ,'*',n,'=',x)
+***********************************************************************************
+y=int(input('Enter the number which multiplication table you want :'))
+a=int(input('Put the lower range :'))
+b=int(input('Put the higher range :'))
+print('The multiplication table of ',y,'is') 
+for n in range(a,b+1):
+    x=y*n
+    print(y ,'*',n,'=',x)
+*******************************************************************************************
+#PROGRAMME TO GENARATE AP SERIES :
+x=int(input('Enter a number which AP series you want :'))
+d=int(input('Enter the difference of this AP series :'))
+print("The AP series of",x)
+while x>0 :
+    print(x)
+    x=x+d
+print("Loop Over !!")    
+**************************************************************************
+#PROGRAMME TO GENARATE AP SERIES :
+x=int(input('Enter a number which AP series you want :'))
+d=int(input('Enter the difference of this AP series :'))
+print("The AP series of",x)
+while x>0 or x<0 or x==0 :
+    print(x)
+    x=x+d
+print("Loop Over !!")    
+
+***************************************************************
+Prog. to find sum of the digits of a number
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++
+Whether Armstrong No. or not
+=> 	sum=0
+	n=int(input("enter a no:"))
+	x=n
+	while n>0:
+    		r=n%10
+    #print(r)
+    sum = sum + r**3
+    n=n//10
+    #print(n)
+if x==sum:
+    print("YES, it's Arm. No.")
+else:
+    print("NO, it's not Arm. No.")
+
+++++++++++++++++++++++++++++++++++
+sum=0
+n=int(input("Enter a no:")
+for i in range(1,5):
+      sum = sum + i
+print(sum)
+++++++++++++++++++++++++++++++++
+Program to check for Palendrom
+a=int(input("enter a no:"))
+x=a
+sum=0
+while a>0:
+    r=a%10
+    sum=sum*10+r
+    a=int(a/10)
+if sum==x:
+    print("the no is palendrome",x)
+else:
+    print("the no is not palendrome",x)
+********************************************************
+x=int(input('Enter a number :'))
+sum=0
+while x>0 :
+    sum+=(x%10)
+    x=x//10
+print(sum)    
+**************************************************************
+x=int(input('Enter a number :'))
+sum=0
+while x>0 :
+    y=x%10
+    x=x//10
+    sum = sum*10 + y
+print(sum)
+**************************************************************
+first =0
+second=1
+print(first)
+print(second)
+for a in range (1,19) :
+    third =first+second
+    print(third)
+    first,second=second,third
+********************************************************
+Program to check the type of input character
+ch=input("Enter a single character:")
+if ch >='A' and ch <='Z':
+    print("You entered an Upper case character.")
+elif ch>='a' and ch<='z':
+    print("You enterd a lower case character.")
+elif ch>='0' and ch<='9':
+    print("You entered a digit.")
+else:
+    print("You enterd a special character.")
+***************************************************
+r=float(input("Enter radius of the circle:"))
+if(r>0.00):
+    pi=3.14
+    area=pi*r*r
+    peri=2*pi*r
+    print("Area of circle with radius", area)
+    print("Perimeter of the cirle with radius", peri)
+else:
+    print("Wrong input")
+
+#############14.09.2018#####################################
+#FIND THE VALUE OF n! :
+n=int(input("Enter the number:"))
+fact=1
+while n>0 :
+    fact=fact*n
+    n=n-1
+print("Factorial of number is:",fact)
+
+Enter the number:3
+Factorial of number is: 6
++++++++++++++++++++++++++
+
+#SWAPPING USING THIRD VARIABLE :
+x=int(input("Enter 1st number (x) :"))
+y=int(input("Enter 2nd number (y) : "))
+c=x
+x=y
+y=c
+print('After swapping (x) =',x)
+print('After swapping (y) =',y)
+
+Enter 1st number (x) :5
+Enter 2nd number (y) : 2
+After swapping (x) = 2
+After swapping (y) = 5
+++++++++++++++++++++++++++++++++++
+#SWAPPING WITHOUT USING THIRD VARIABLE :
+x=int(input('Enter 1st number(x) :'))
+y=int(input('Enter 2nd number(y) :'))
+x=x+y
+y=x-y
+x=x-y
+print('After swapping (x) =',x)
+print('After swapping (y) =',y)
+
+Enter 1st number(x) :5
+Enter 2nd number(y) :2
+After swapping (x) = 2
+After swapping (y) = 5
+
++++++++++++++++++++++++++++++
+#RECEIVE A VALUE OF 'n' (1-7) AND PRINT n(n+1)(n+2) AS OUTPUT :
+n=int(input('Enter a number :'))
+x=(n+2)+10*(n+1)+100*n
+print(x)
+
+Enter a number :5
+567
+
+++++++++++++++++++++++++++++++
+#x+x^2/2+x^3/3+x^4/4+.........+x^n/n =?
+x=int(input("Enter a number :"))
+n=int(input("Enter the value of n :"))
+sum=0
+for y in range (1,n+1) :
+    sum=sum+(x**y)/y   
+print(sum) 
+
+Enter a number :1
+Enter the value of n :4
+2.083333333333333
+++++++++++++++++++++++++++++++++++
+#x+x^2/2!+x^3/3!+x^4/4!+.........+x^n/n! =?
+x=int(input("Enter a number :"))
+n=int(input("Enter the value of n :"))
+sum=0
+for r in range (1,n+1) :
+    fact=1
+    while r>0 :
+        fact=fact*r
+        r=r-1
+    sum=sum+(x**r)/fact   
+print(sum)  
+
+Enter a number :1
+Enter the value of n :2
+1.5
+++++++++++++++++++++++++++++++++
+#PROGRAMME TO CHECK PRIME NUMBER :
+x=int(input("Enter a number to check for prime or non prime :"))
+import math
+n=int(math.fabs(x))
+if n==0 :
+    print(x,"is a non-prime number.")
+elif n==1 :
+    print(x,"is neither prime nor non-prime number.")
+elif n==2 :
+    print(x,"is a prime number.")
+flag=0
+for r in range (2,n) :
+    if n%r==0:
+        flag=1
+        break
+if flag==1:
+    print(x,"is a non-prime number .")
+else:
+    print(x,"is a prime number .")    
+******************************************************************
+#PROGRAMME TO PRINT PRIME & NON-PRIME NUMBERS WITHIN A RANGE :
+x=int(input("Enter the lower limit(>3) :"))
+y=int(input("Enter the upper limit :"))
+for r in range (x,y+1) :
+    for n in range (2,r):
+        if r%n==0 :
+            print(r,"is a non-prime number.")
+            break
+        elif r%2!=0 and r%3!=0 :
+            print(r,"is a prime number .")
+            break
+++++++++++++++++++++++++++++++++++++++++
+#Program to find sum of the numbers in between a range - Using Function
+def sum(x,y) :
+    sum=0
+    for n in range (x,y+1) :
+        sum=sum+n
+    print("sum of integer from ",x,"to",y,"is",sum)
+sum(1,25)        
+
+O/p=> sum of integer from  1 to 25 is 325
+++++++++++++++++++++++++++++++++++++++++++++
+#Simple program - Using Function
+def display():
+    print("welcome to python programme.")
+display()    
+
+O/p => welcome to python programme.
+++++++++++++++++++++++++++++++++++++++++++++
+#Program to find the maximum of two numbers received from keyboard - Using Function
+def printmax(num1,num2):
+    print("num1",num1)
+    print("num2",num2)
+    if num1>num2 :
+        print("THE NUMBER",num1,"IS GREATER THAN",num2)
+    elif num1<num2 :
+        print("THE NUMBER",num2,"IS GREATER THAN",num1)
+    elif num1==num2 :
+        print("THE NUMBER",num1,"IS EQUAL TO",num2)
+x=int(input("Enter a number :"))
+y=int(input("Enter a number :"))
+printmax(x,y)
+
+O/p => Enter a number :22
+Enter a number :44
+num1 22
+num2 44
+THE NUMBER 44 IS GREATER THAN 22
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# WRITE A PYTHON PROGRAMME for FINDING FACTORIAL VALUE OF A NUMBER BY USEING WHILE LOOP(by using function): :
+def factorial(num):
+    fact=1
+    a=1
+    while a<=num :
+        fact*=a
+        a+=1
+    print("THE FACTORIAL VALUE OF",num,"is",fact)
+factorial(5) 
+
+O/p => THE FACTORIAL VALUE OF 5 is 120
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#Program on keyword argument - Using Function
+def display(name,age):
+    print("NAME =",name,", AGE =",age)
+display("Sourav",18)
+
+O/p => NAME = Sourav , AGE = 18
+++++++++++++++++++++++++++++++++++++++++++++++
+#Program on use of default values - Using Function
+def greet(name,msg="welcome to KMA sir's classes"):
+          print("Hello",name,msg)
+greet("Sourav") 
+
+O/p => Hello Sourav welcome to KMA sir's classes
+++++++++++++++++++++++++++++++++++++++++++++++++
+#Program to calculate Area of a Circle - Using Function
+def areacircle(radius,pi=3.14):
+    area=pi*radius*radius
+    print("radius=",radius)
+    print("The area of circle =",area)
+areacircle(5)
+
+O/p => radius= 5
+The area of circle = 78.5
++++++++++++++++++++++++++++++++++++++++++++++++
+#Program to find n-th Fibonacci Number - Using Recursive Function
+def fib(n):
+    if n==0 :
+        return 1
+    if n==1:
+        return 1
+    return fib(n-1)+fib(n-2)
+print("The value of 10th FIBONACCI number =",fib(8))
+
+O/p => The value of 10th FIBONACCI number = 34
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#Program to find the Factorial value of a Number - Using Recursive Function
+def factorial(n):
+    if n==0 :
+        return 1
+    return n*factorial(n-1)
+print(factorial(5))
+
+O/p => 120
+
+
+def fib(n):
+    if n==1:
+        return 1
+    if n==0:
+        return 0
+    return fib(n-1)+fib(n-2)
+a=int(input("Enter the limit: "))
+for i in range(a):
+    print(fib(i),end=" ")
+*******************************************************************************
+#User defined LIST	
+y=list()
+n=int(input("enter a range:"))
+for i in range(0,n):
+    p=int(input("enter a no:"))
+    y[i]=p
+print(y)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
